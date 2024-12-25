@@ -35,10 +35,16 @@ header span {
     padding: 60px 0;
     min-height: 100vh;
     /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 .main-section .wrapper {
     /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-wrapper {
@@ -68,7 +74,10 @@ header span {
 
 .about-section .wrapper {
   /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
-  margin: 60px;
+  display: flex;
+  flex-direction: column;
+
+  /* margin: 60px; */
 }
 
 select {
@@ -91,6 +100,7 @@ select:hover,
 
 .info-wrapper {
     /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
+    display: flex;
 }
 
 .section-title {
@@ -107,6 +117,7 @@ select:hover,
 .frameworks-list,
 .books-list {
     /* 📍 Свойства flexbox для отступов между элементами в списках */
+    
 }
 
 .frameworks-list {
@@ -119,13 +130,14 @@ select:hover,
 .skills-block {
   /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  flex-direction: column-reverse;
 }
 
 .skills {
   /* 📍 Свойства flexbox для расположения элементов с классом .label */
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
 }
 
 .books-list {
@@ -205,3 +217,5 @@ footer {
   /* 📍 Стили для ссылки при наведении курсора */
   text-decoration: underline;
 }
+
+
