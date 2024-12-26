@@ -5,7 +5,7 @@
 }
 
 .container {
-  outline: 1px solid red; /* чтобы контейнер был виден, в конце можно будет удалить это св-во */
+  /* outline: 1px solid red; чтобы контейнер был виден, в конце можно будет удалить это св-во */
   margin: 0 auto;
   width: 100%;
   /* 📍 Максимальная ширина для контейнера */
@@ -31,19 +31,18 @@ header span {
 }
 
 .main-section {
-    background-color: #fafaff;
-    padding: 60px 0;
-    min-height: 100vh;
-    /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
-    flex-direction: column;
-    align-items: center;
-    
+  background-color: #fafaff;
+  padding: 60px 0;
+  min-height: 100vh;
+  /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-section .wrapper {
-    /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
-    display: flex;
-    align-items: center;
+  /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
+  display: flex;
+  align-items: center;
 }
 
 .text-wrapper {
@@ -76,33 +75,31 @@ header span {
   display: flex;
   flex-direction: column;
   gap: 60px;
+  justify-content: space-around;
 }
 
 select {
-    border: 1px solid rgba(48, 48, 48, 0.3);
-    border-radius: 5px;
-    width: 150px;
-    padding: 8px 12px;
-    font-weight: 400;
-    font-size: 16px;
-    appearance: none; 
-    background-image: url("./ep_arrow-down.svg");
-    background-repeat: no-repeat;
-    background-position: right 12px top 50%;
+  border: 1px solid rgba(48, 48, 48, 0.3);
+  border-radius: 5px;
+  width: 150px;
+  padding: 8px 12px;
+  font-weight: 400;
+  font-size: 16px;
+  appearance: none;
+  background-image: url("./assets/images/ep_arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 12px top 50%;
 }
 
 select:hover,
 .text-field:hover {
-    /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
-    border: 1px solid #2965f1;
-    
+  /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
+  border: 1px solid #2965f1;
 }
 
 .info-wrapper {
-    /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
-    display: flex;
-
-    
+  /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
+  display: flex;
 }
 
 .section-title {
@@ -118,24 +115,23 @@ select:hover,
 
 .frameworks-list,
 .books-list {
-    /* 📍 Свойства flexbox для отступов между элементами в списках */
- display: flex;
- flex-direction: column;
+  /* 📍 Свойства flexbox для отступов между элементами в списках */
+  display: flex;
+  flex-direction: column;
   gap: 16px;
-
 }
 
 .frameworks-list {
-    font-weight: 400;
-    font-size: 16px;
-    list-style-image: url(./solar_map-arrow-up-bold.svg);
-    padding-left: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  list-style-image: url(./assets/images/solar_map-arrow-up-bold.svg);
+  padding-left: 20px;
 }
 
 .skills-block {
   /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
   display: flex;
-  flex-direction: column-reverse; 
+  flex-direction: column-reverse;
 }
 
 .skills {
@@ -143,7 +139,6 @@ select:hover,
   display: flex;
   flex-direction: column;
   gap: 20px;
-
 }
 
 .books-list {
@@ -227,5 +222,3 @@ footer {
   /* 📍 Стили для ссылки при наведении курсора */
   text-decoration: underline;
 }
-
-
